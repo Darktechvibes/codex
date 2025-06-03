@@ -1,6 +1,6 @@
 import { ReviewDecision } from "../../utils/agent/review";
-// TODO: figure out why `cli-spinners` fails on Node v20.9.0
-// which is why we have to do this in the first place
+// `cli-spinners` had issues with Node 20.9.0. We require Node 22 now, so
+// this vendor import is kept only for historical reasons.
 //
 // @ts-expect-error select.js is JavaScript and has no types
 import { Select } from "../vendor/ink-select/select";
