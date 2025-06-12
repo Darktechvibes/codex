@@ -4,8 +4,8 @@ import { Box, Text } from "ink";
 import React from "react";
 import { AutoApprovalMode } from "src/utils/auto-approval-mode";
 
-// TODO: figure out why `cli-spinners` fails on Node v20.9.0
-// which is why we have to do this in the first place
+// `cli-spinners` had issues with Node 20.9.0, but we now require Node 22 so
+// this workaround remains only for historical reasons.
 
 export function OnboardingApprovalMode(): React.ReactElement {
   return (
